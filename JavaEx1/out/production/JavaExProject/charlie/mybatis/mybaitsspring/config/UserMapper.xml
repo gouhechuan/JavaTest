@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="charlie.mybatis.mybaitsspring.dao.UserMapper">
+
+
+    <select id="selectUserById" parameterType="int" resultType="charlie.mybatis.mybaitsspring.dao.domain.User">
+        select * from user where id=#{ss}
+    </select>
+    <!--拼接符，不建议使用-->
+    <select id="selectUserByUserName" parameterType="String" resultType="charlie.mybatis.day02.domain.User">
+        select * from user where UserName like '%${value}%'
+    </select>
+    <!--当输入参数为简单类型的时候，#{}大括号中间可以填随意值-->
+    <select id="selectUserByUserNameZWF" parameterType="String" resultType="charlie.mybatis.day02.domain.User">
+        select * from user where UserName like #{dd}
+    </select>
+
+    <insert id="insertUser" parameterType="charlie.mybatis.day02.domain.User">
+        insert into user(UserName,birthday,sex,address,id) values(#{userName},#{birthday},#{sex},#{address},#{id})
+        <selectKey resultType="int" keyProperty="id" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+    </insert>
+
+    <delete id="deleteUser" parameterType="int">
+        delete  from user where id=#{value}
+    </delete>
+    <update id="updateUser" parameterType="charlie.mybatis.day02.domain.User">
+        update user set username=#{userName},sex=#{sex},birthday=#{birthday},address=#{address} where id=#{id}
+    </update>
+
+
+    <resultMap id="userResultMap" type="charlie.mybatis.day02.domain.UserCustom">
+        <result property="id" column="id" jdbcType="INTEGER"></result>
+        <result property="userName" column="userName" jdbcType="VARCHAR"></result>
+        <result property="birthday" column="birthday" jdbcType="TIMESTAMP"></result>
+        <result property="sex" column="sex" jdbcType="BIT"></result>
+        <!--
+        一对一关系用association
+        select :制定延迟加载用的statement
+        select:制定关联列
+        -->
+        <!--<association property="" select="" column=""  >-->
+        <!--</association>-->
+        <!--<collection property=""></collection>-->
+        <!--多对多关系用collection-->
+        <!--<collection property="" column="">-->
+            <!--<result column="" property="" jdbcType=""></result>-->
+        <!--</collection>-->
+    </resultMap>
+
+
+    <select id="SelectPage" parameterType="charlie.mybatis.day02.domain.UserVo" resultMap="userResultMap">
+        select id,UserName,birthday,sex from user
+        <where>
+            <if test="user!=null">
+                <if test="user.userName!=null">
+                    AND userName=#{user.userName}
+                </if>
+                <if test="user.sex!=null">
+                    AND Sex=#{user.sex}
+                </if>
+                <if test="users!=null">
+                    <foreach collection="users" item="u" open="AND id in(" close=")" separator=",">
+                        #{u.id}
+                    </foreach>
+                </if>
+            </if>
+        </where>
+        limit #{curRowIndex},#{pageSize}
+    </select>
+</mapper>

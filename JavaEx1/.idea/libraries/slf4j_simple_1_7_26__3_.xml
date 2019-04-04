@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="slf4j-simple-1.7.26 (3)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/lib/slf4j/slf4j-simple-1.7.26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/slf4j/slf4j-migrator-1.7.26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/slf4j/slf4j-jcl-1.7.26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/slf4j/slf4j-api-1.7.26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/slf4j/slf4j-log4j12-1.7.26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/slf4j/slf4j-ext-1.7.26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/slf4j/slf4j-nop-1.7.26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/slf4j/slf4j-jdk14-1.7.26.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

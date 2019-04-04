@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="aspectjrt">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/charlie/spring/lib/aspectj/aspectjrt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/charlie/spring/lib/aspectj/aspectjtools.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/charlie/spring/lib/aspectj/aspectjweaver.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/charlie/spring/lib/aspectj/org.aspectj.matcher.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
