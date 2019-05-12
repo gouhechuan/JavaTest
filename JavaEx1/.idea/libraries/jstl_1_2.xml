@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="c3p0-0.9.5.2">
+  <library name="jstl-1.2">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/src/charlie/spring/lib/c3p0-0.9.5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/springmvc/web/WEB-INF/lib/jstl-1.2.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

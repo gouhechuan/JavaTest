@@ -11,9 +11,6 @@
         </webroots>
       </configuration>
     </facet>
-    <facet type="Spring" name="Spring">
-      <configuration />
-    </facet>
   </component>
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/web/WEB-INF/classes" />
@@ -24,19 +21,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="spring-webmvc-5.0.5.RELEASE" level="project" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/web/WEB-INF/lib" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-        <jarDirectory url="file://$MODULE_DIR$/web/WEB-INF/lib" recursive="false" />
-      </library>
-    </orderEntry>
+    <orderEntry type="library" name="tomcat-api" level="project" />
     <orderEntry type="library" name="servlet-api" level="project" />
-    <orderEntry type="library" name="jstl-1.2" level="project" />
-    <orderEntry type="library" name="spring-aop-5.0.5.RELEASE (2)" level="project" />
   </component>
 </module>
