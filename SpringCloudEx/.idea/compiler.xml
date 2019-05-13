@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="configServer" />
+        <module name="ConfigClinetEx" />
+        <module name="configDirEx" />
         <module name="EurekaServer" />
       </profile>
       <profile name="Annotation profile for con.charlie.devEx" enabled="true">
@@ -17,6 +19,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ConfigClinetEx" target="1.8" />
+      <module name="configDirEx" target="1.5" />
       <module name="configServer" target="1.8" />
       <module name="EurekaClient" target="1.8" />
       <module name="EurekaServer" target="1.8" />

@@ -12,5 +12,7 @@ spring:
         git:
           uri: https://github.com/gouhechuan/JavaTest
           searchPaths: SpringCloudEx\EurekaClientEx\src\main\resources
+          username: gouhechuan
+          password: g136843716
   application:
     name: config-server

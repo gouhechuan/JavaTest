@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ConfigClinetEx/ConfigClinetEx.iml" filepath="$PROJECT_DIR$/ConfigClinetEx/ConfigClinetEx.iml" />
       <module fileurl="file://$PROJECT_DIR$/EurekaClientEx/EurekaClient.iml" filepath="$PROJECT_DIR$/EurekaClientEx/EurekaClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/EurekaServerEx/EurekaServer.iml" filepath="$PROJECT_DIR$/EurekaServerEx/EurekaServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/configDirEx/configDirEx.iml" filepath="$PROJECT_DIR$/configDirEx/configDirEx.iml" />
       <module fileurl="file://$PROJECT_DIR$/configServerEx/configServer.iml" filepath="$PROJECT_DIR$/configServerEx/configServer.iml" />
     </modules>
   </component>

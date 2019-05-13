@@ -11,18 +11,18 @@ import org.springframework.web.bind.annotation.RestController;
 
 @EnableConfigServer
 @SpringBootApplication
-@EnableEurekaServer
-@RestController
+@EnableEurekaClient
+//@RestController
 public class ConfigServerApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ConfigServerApplication.class, args);
     }
 
-    @Value("${server.port}")
-    String port;
-    @RequestMapping("/")
-    public String home() {
-        return "config Server from port " + port;
-    }
+//    @Value("${server.port}")
+//    String port;
+//    @RequestMapping("/")
+//    public String home() {
+//        return "config Server from port " + port;
+//    }
 }
