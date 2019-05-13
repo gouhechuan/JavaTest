@@ -12,9 +12,9 @@ spring:
         git:
 #          uri: https://git.oschina.net/chrywhy/test
 #          searchPaths: spring-cloud/helloworldConfig
-          uri: https://github.com/gouhechuan/JavaTest
+          uri: https://github.com/gouhechuan/JavaTest/
           searchPaths: SpringCloudEx/configDirEx
-#          username: gouhechuan
-#          password: g136843716
+          username: gouhechuan
+          password: g136843716
   application:
     name: config-server
