@@ -6,11 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="EurekaClient" />
+        <module name="configServer" />
         <module name="EurekaServer" />
+      </profile>
+      <profile name="Annotation profile for con.charlie.devEx" enabled="true">
+        <sourceOutputDir name="../concharliedevEx/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../concharliedevEx/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="EurekaClient" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="configServer" target="1.8" />
       <module name="EurekaClient" target="1.8" />
       <module name="EurekaServer" target="1.8" />
     </bytecodeTargetLevel>

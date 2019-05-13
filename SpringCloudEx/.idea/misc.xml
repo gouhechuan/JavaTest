@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/concharliedevEx/pom.xml" />
         <option value="$PROJECT_DIR$/concharliedev2Ex/pom.xml" />
+        <option value="$PROJECT_DIR$/configServer/pom.xml" />
       </list>
     </option>
   </component>

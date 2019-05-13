@@ -1,6 +1,7 @@
 server:
   port: 8761
-
+application:
+  name: Eureka-server
 eureka:
   instance:
     hostname: localhost
@@ -9,3 +10,10 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#spring:
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://git.oschina.net/chrywhy/test
+#          searchPaths: spring-cloud/helloworldConfig

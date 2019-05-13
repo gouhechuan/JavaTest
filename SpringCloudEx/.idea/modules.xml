@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/EurekaClientEx/EurekaClient.iml" filepath="$PROJECT_DIR$/EurekaClientEx/EurekaClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/EurekaServerEx/EurekaServer.iml" filepath="$PROJECT_DIR$/EurekaServerEx/EurekaServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/configServerEx/configServer.iml" filepath="$PROJECT_DIR$/configServerEx/configServer.iml" />
     </modules>
   </component>
 </project>
