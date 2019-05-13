@@ -10,9 +10,11 @@ spring:
     config:
       server:
         git:
+#          uri: https://git.oschina.net/chrywhy/test
+#          searchPaths: spring-cloud/helloworldConfig
           uri: https://github.com/gouhechuan/JavaTest
-          searchPaths: SpringCloudEx\EurekaClientEx\src\main\resources
-          username: gouhechuan
-          password: g136843716
+          searchPaths: SpringCloudEx/configDirEx
+#          username: gouhechuan
+#          password: g136843716
   application:
     name: config-server
